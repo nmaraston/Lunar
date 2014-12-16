@@ -1,0 +1,43 @@
+html {
+	background-color: black;
+}
+
+#content {
+	height: 100%;
+	width: 100%;
+	color: #6d8199;
+	font-family: Sans-serif;
+}
+
+#header {
+	height: 10em;
+	position: relative;
+}
+
+#header h1 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+}
+
+.preview-panel {
+	height: 200px;
+}
+
+.preview-panel h2 {
+	border-bottom: 2px solid;
+}
+
+.preview-panel .gallery {
+	text-align: center;
+}
+
+.preview-panel .gallery .video {
+	display: inline-block;
+	margin: 0px 50px 0px 50px;
+	padding: 5px;
+}
