@@ -33,11 +33,28 @@ html {
 	font-size: 45px;
 }
 
+#contact-panel {
+	display: inline-block;
+	float: right;
+	margin-right: 15px;	
+}
+
+#contact-panel h3 {
+	font-size: 23px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#contact-links img {
+	margin: 0px 5px 0px 5px;
+}
+
 .preview-panel {
 	height: 200px;
 }
 
 .preview-panel h2 {
+	padding-left: 10px;
 	border-bottom: 1px solid;
 }
 
