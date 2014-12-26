@@ -1,5 +1,9 @@
 html {
-	background-color: black;
+	background: url('../images/cosmos.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 #content {
@@ -10,7 +14,7 @@ html {
 }
 
 #header {
-	height: 10em;
+	height: 240px;
 	position: relative;
 }
 
@@ -29,7 +33,7 @@ html {
 }
 
 .preview-panel h2 {
-	border-bottom: 2px solid;
+	border-bottom: 1px solid;
 }
 
 .preview-panel .gallery {
