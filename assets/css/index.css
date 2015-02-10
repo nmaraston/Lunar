@@ -18,6 +18,7 @@ html {
 	width: 100%;
 	color: #6d8199;
 	font-family: 'Brighton Bold';
+	min-width: 1250px;
 }
 
 #header {
@@ -32,7 +33,7 @@ html {
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
-	font-size: 45px;
+	font-size: 50px;
 }
 
 #contact-panel {
@@ -49,6 +50,10 @@ html {
 
 #contact-links img {
 	margin: 0px 5px 0px 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6D8199;
+	border-radius: 2px;
 }
 
 .preview-panel {
@@ -57,15 +62,62 @@ html {
 
 .preview-panel h2 {
 	padding-left: 10px;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
 }
 
 .preview-panel .gallery {
 	text-align: center;
 }
 
-.preview-panel .gallery .video {
+.video-thumbnail-trailer {
+	height: 140px;
+	width: 336px;
 	display: inline-block;
 	margin: 0px 50px 0px 50px;
-	padding: 5px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #6D8199;
+	border-radius: 2px;
+}
+
+.video-thumbnail-trailer img {
+	height: 100%;
+	width: 100%;
+	vertical-align: top;
+}
+
+.video-thumbnail {
+	height: 140px;
+	width: 336px;
+	position: relative;
+	display: inline-block;
+	margin: 0px 50px 0px 50px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #6D8199;
+	border-radius: 2px;
+}
+
+.video-thumbnail img {
+	height: 100%;
+	width: 100%;
+	vertical-align: top;
+}
+
+.video-thumbnail:after {
+	content: '\A';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url('../images/thumbnails/thumbnail_overlay.png');
+	background-size: 100% 100%;
+	opacity: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.video-thumbnail:hover:after {
+	opacity: 1;
 }
