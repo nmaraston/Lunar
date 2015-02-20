@@ -3,10 +3,10 @@
     width:465px;
     padding:20px;
     margin: 50px auto;   
-    border: 6px solid #8FB5C1;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
+    border: 4px solid #8FB5C1;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
     position:relative;
 }
  
@@ -31,7 +31,7 @@
 #contact-form input,
 #contact-form select,
 #contact-form textarea {
-    width:450px;
+    width:415px;
     border: 1px solid #CEE1E8;
     margin-bottom:20px;
     padding:4px;
@@ -96,7 +96,7 @@
     padding:10px;
     margin:25px 0px;
     display:block;
-    width:437px;
+    width:415px;
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
     border-radius:8px;
