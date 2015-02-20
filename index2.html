@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Cosmotion Pictures</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/emaillightbox.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid contact-panel">
+				<ul class="nav navbar-nav">
+					<li><a href="https://www.facebook.com/CosmotionPictures"><img src="assets/images/facebook.png"></a></li>
+					<li><a href="http://vimeo.com/cosmotionpictures"><img src="assets/images/vimeo.png"></a></li>
+					<li><a href="" class="emaillightbox"><img src="assets/images/email.png"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<br/>
+		<br/>
+		<br/>
+
+		<div class="container text-center">
+			<h1 id="main-header">Cosmotion Pictures</h1>
+		</div>
+
+		<br/>
+		<br/>
+
+		<div class="container">
+			<h1 class="video-gallery-header">Now Playing</h1>
+		</div>
+
+		<div class="container well video-gallery-panel">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+					<a href="http://player.vimeo.com/video/65698742?title=0&byline=0&portrait=0" class="html5lightbox">
+						<div class="video-thumbnail vs-thumbnail-offset">
+							<div class="video-thumbnail-overlay"></div>
+							<img src="assets/images/thumbnails/AIW.jpg" class="img-responsive">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+					<a href="http://player.vimeo.com/video/54669847?title=0&byline=0&portrait=0" class="html5lightbox">
+						<div class="video-thumbnail vs-thumbnail-offset">
+							<div class="video-thumbnail-overlay"></div>
+							<img src="assets/images/thumbnails/MUSE.jpg" class="img-responsive">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+					<a href="http://player.vimeo.com/video/77160863?title=0&byline=0&portrait=0" class="html5lightbox">
+						<div class="video-thumbnail vs-thumbnail-offset">
+							<div class="video-thumbnail-overlay"></div>
+							<img src="assets/images/thumbnails/The Fall.jpg" class="img-responsive">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<br/>	
+
+		<div class="container">
+			<h1 class="video-gallery-header">Coming Soon</h1>
+		</div>
+
+		<div class="container well video-gallery-panel">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+					<div class="video-thumbnail vs-thumbnail-offset">
+						<img src="assets/images/thumbnails/Droid.jpg" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+					<div class="video-thumbnail vs-thumbnail-offset">
+						<img src="assets/images/thumbnails/WTPE.jpg" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+					<div class="video-thumbnail vs-thumbnail-offset">
+						<img src="assets/images/thumbnails/MSTRDM.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id='email-lightbox' style='display:none;top:0px;left:0px;width:100%;height:100%;z-index:9999998;'>
+			<div id='email-lightbox-overlay' style='display:block;position:absolute;top:0px;left:0px;width:100%;min-height:100%;background-color:#000;opacity:0.8;filter:alpha(opacity=" + Math.round(0.8 * 100) + ");'></div>
+
+			<div id="contact-form">
+
+				<div id='email-lightbox-close' style='cursor:pointer;position:absolute;top:0;right:0;margin-top:-16px;margin-right:-16px;'>
+					<img src="assets/images/lightbox_skin/lightbox-close.png">
+				</div>
+
+				<h1>Get In Touch!</h1>
+			    <ul id="errors">
+			        <li id="info">Please fill out all required fields.</li>
+			    </ul>
+			    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+		        <label for="name">Name: <span class="required">*</span></label>
+		        <input type="text" id="name" name="name" value="" required="required" autofocus="autofocus" />
+		         
+		        <label for="email">Email Address: <span class="required">*</span></label>
+		        <input type="email" id="email" name="email" value="" required="required" />
+		         
+		        <label for="message">Message: <span class="required">*</span></label>
+		        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+		         
+		        <span id="loading"></span>
+		        <input type="submit" value="Send" id="submit-button" />
+		        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/bootstrap.js"></script>
+		<script type="text/javascript" src="lib/html5lightbox.js"></script>
+		<script type="text/javascript" src="lib/emaillightbox.js"></script>
+		<script type="text/javascript">
+    		var html5lightbox_options = {
+        		skinsfoldername: "../assets/images/lightbox_skin",
+        		bgcolor: "#6D8199",
+                bordersize: 4,
+                borderradius: 2
+    		};
+		</script>
+
+	</body>
+
+</html>
